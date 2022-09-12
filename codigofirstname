@@ -1,0 +1,101 @@
+
+  <?php
+    include("conexion.php");
+      
+      $folio    ="";
+		$existefolio = 0;	//(324)puedo quitarlo "se le llama control de errores campovacioerroneoexistente"
+		
+	//CONSULTAR
+	$resultados = mysqli_query($con,"SELECT * FROM $estadisticas ORDER by id_cuentaconexion DESC LIMIT 1");	//para mostrar contenido que contenga "cion"$resultados = mysqli_query($con,"SELECT * FROM $propietario WHERE nombre LIKE '%al%'");	//(233)para mostrar la tabla de numero de masajes de una persona	$resultados = mysqli_query($con,"SELECT * FROM $propietario");
+	while($consulta = mysqli_fetch_array($resultados))
+	{	
+		$resultado = $consulta['id_cuentaconexion'] ;	
+		echo 							//(233)para mostrar la tabla de numero de masajes de una persona   echo $consulta['nombre']."<br>";	
+		
+	"<div  >
+	<fieldset>
+	<legend>Conexiones:</legend>
+
+	<label for=\"folio\">id_conexion index:</label><br>
+	<input name=\"folio\" type=\"number\" value=".$resultado." id=\"folio\" disabled><br>
+
+	</fieldset>
+<br>
+</div>";			
+		
+		$existefolio++;
+		
+	}
+	
+		if($existefolio==0){echo "No se pudo ingresar a la base de datos";}		//(324)puedo quitarlo			
+
+    include("descone.php");
+  ?>
+
+
+  <?php
+    include("conexion.php");
+      
+      $foliopre    ="";
+		$existefoliopre = 0;	//(324)puedo quitarlo "se le llama control de errores campovacioerroneoexistente"
+		
+	//CONSULTAR
+	$resultadospre = mysqli_query($con,"SELECT * FROM $estadisticaspre ORDER by id_cuentaconexionpre DESC LIMIT 1");	//para mostrar contenido que contenga "cion"$resultados = mysqli_query($con,"SELECT * FROM $propietario WHERE nombre LIKE '%al%'");	//(233)para mostrar la tabla de numero de masajes de una persona	$resultados = mysqli_query($con,"SELECT * FROM $propietario");
+	while($consultapre = mysqli_fetch_array($resultadospre))
+	{	
+		$resultadopre = $consultapre['id_cuentaconexionpre'] ;	
+		echo 							//(233)para mostrar la tabla de numero de masajes de una persona   echo $consulta['nombre']."<br>";	
+		
+	"<div  >
+	<fieldset>
+	<legend>Conexiones preindex:</legend>
+
+	<label for=\"folio\">id_conexion preindex:</label><br>
+	<input name=\"folio\" type=\"number\" value=".$resultadopre." id=\"folio\" disabled><br>
+
+	</fieldset>
+<br>
+</div>";			
+		
+		$existefoliopre++;
+		
+	}
+	
+		if($existefoliopre==0){echo "No se pudo ingresar a la base de datos";}		//(324)puedo quitarlo			
+
+    include("descone.php");
+  ?>
+  
+
+  <?php
+    include("conexion.php");
+      
+      $foliosub    ="";
+		$existefoliosub = 0;	//(324)puedo quitarlo "se le llama control de errores campovacioerroneoexistente"
+		
+	//CONSULTAR
+	$resultadossub = mysqli_query($con,"SELECT * FROM $estadisticassub ORDER by id_cuentaconexionsub DESC LIMIT 1");	//para mostrar contenido que contenga "cion"$resultados = mysqli_query($con,"SELECT * FROM $propietario WHERE nombre LIKE '%al%'");	//(233)para mostrar la tabla de numero de masajes de una persona	$resultados = mysqli_query($con,"SELECT * FROM $propietario");
+	while($consultasub = mysqli_fetch_array($resultadossub))
+	{	
+		$resultadosub = $consultasub['id_cuentaconexionsub'] ;	
+		echo 							//(233)para mostrar la tabla de numero de masajes de una persona   echo $consulta['nombre']."<br>";	
+		
+	"<div  >
+	<fieldset>
+	<legend>Conexiones index2:</legend>
+
+	<label for=\"folio\">id_conexion index2:</label><br>
+	<input name=\"folio\" type=\"number\" value=".$resultadosub." id=\"folio\" disabled><br>
+
+	</fieldset>
+<br>
+</div>";			
+		
+		$existefoliosub++;
+		
+	}
+	
+		if($existefoliosub==0){echo "No se pudo ingresar a la base de datos";}		//(324)puedo quitarlo			
+
+    include("descone.php");
+  ?>
