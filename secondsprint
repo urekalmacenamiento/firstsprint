@@ -1,0 +1,422 @@
+
+<body onclick="tiempoclic(event)" style="background-color:darkgrey">
+
+
+
+<p>emails suscritos</p>
+	<?php 
+			//seleccionar una columna y arrojar todos los datos
+
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT * FROM $suscrito");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{
+				echo $consultasu['email']." ".$consultasu['fecha'];
+				echo "<br>";
+			}
+			include("descone.php");
+		
+	?>
+	
+<br>
+<span style="border:5px solid red;">Numero de emails suscritos
+	<?php 
+			//seleccionar una columna y arrojar todos los datos
+
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $suscrito");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{
+				echo $consultasu['count(*)'];
+				echo "<br>";
+			}
+			include("descone.php");
+		
+	?>
+</span>
+
+<br>
+
+<span style="border:5px solid red;">Conexiones de enero
+	<?php 
+			//seleccionar una columna y arrojar todos los datos
+
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE mes = 01");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{
+				echo $consultasu['count(*)'];
+			}
+			include("descone.php");
+		
+	?>
+</span>
+
+<span style="border:5px solid red;">01-
+	<?php 	//seleccionar una columna y arrojar todos los datos
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE mes = 01 AND dia = 01");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{	echo $consultasu['count(*)'];	}
+			include("descone.php");
+	?>
+</span>
+
+<span style="border:5px solid red;">02-
+	<?php 	//seleccionar una columna y arrojar todos los datos
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE mes = 01 AND dia = 02");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{	echo $consultasu['count(*)'];	}
+			include("descone.php");
+	?>
+</span>
+
+<span style="border:5px solid red;">03-
+	<?php 	//seleccionar una columna y arrojar todos los datos
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE mes = 01 AND dia = 03");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{	echo $consultasu['count(*)'];	}
+			include("descone.php");
+	?>
+</span>
+
+<span style="border:5px solid red;">04-
+	<?php 	//seleccionar una columna y arrojar todos los datos
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE mes = 01 AND dia = 04");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{	echo $consultasu['count(*)'];
+				echo "<br>";		}
+			include("descone.php");
+	?>
+</span>
+
+<span style="border:5px solid red;">Conexiones de febrero
+	<?php 
+			//seleccionar una columna y arrojar todos los datos
+
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE mes = 02");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{
+				echo $consultasu['count(*)'];
+				echo "<br>";
+			}
+			include("descone.php");
+		
+	?>
+</span>
+
+<span style="border:5px solid red;">Conexiones de marzo
+	<?php 
+			//seleccionar una columna y arrojar todos los datos
+
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE mes = 03");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{
+				echo $consultasu['count(*)'];
+				echo "<br>";
+			}
+			include("descone.php");
+		
+	?>
+</span>
+
+<span style="border:5px solid red;">Conexiones de abril
+	<?php 
+			//seleccionar una columna y arrojar todos los datos
+
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE mes = 04");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{
+				echo $consultasu['count(*)'];
+				echo "<br>";
+			}
+			include("descone.php");
+		
+	?>
+</span>
+
+<span style="border:5px solid red;">Conexiones de mayo
+	<?php 
+			//seleccionar una columna y arrojar todos los datos
+
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE mes = 05");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{
+				echo $consultasu['count(*)'];
+				echo "<br>";
+			}
+			include("descone.php");
+		
+	?>
+</span>
+
+<span style="border:5px solid red;">Conexiones de junio
+	<?php 
+			//seleccionar una columna y arrojar todos los datos
+
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE mes = 06");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{
+				echo $consultasu['count(*)'];
+				echo "<br>";
+			}
+			include("descone.php");
+		
+	?>
+</span>
+
+<span style="border:5px solid red;">Conexiones de julio
+	<?php 
+			//seleccionar una columna y arrojar todos los datos
+
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE mes = 07");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{
+				echo $consultasu['count(*)'];
+				echo "<br>";
+			}
+			include("descone.php");
+		
+	?>
+</span>
+
+<span style="border:5px solid red;">Conexiones de agosto
+	<?php 
+			//seleccionar una columna y arrojar todos los datos
+
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE mes = 08");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{
+				echo $consultasu['count(*)'];
+			}
+			include("descone.php");
+		
+	?>
+</span>
+
+<span style="border:5px solid red;">26-
+	<?php 	//seleccionar una columna y arrojar todos los datos
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE mes = 01 AND dia = 26");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{	echo $consultasu['count(*)'];	}
+			include("descone.php");
+	?>
+</span>
+
+<span style="border:5px solid red;">27-
+	<?php 	//seleccionar una columna y arrojar todos los datos
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE mes = 08 AND dia = 27");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{	echo $consultasu['count(*)'];	}
+			include("descone.php");
+	?>
+</span>
+
+<span style="border:5px solid red;">28-
+	<?php 	//seleccionar una columna y arrojar todos los datos
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE mes = 08 AND dia = 28");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{	echo $consultasu['count(*)'];	}
+			include("descone.php");
+	?>
+</span>
+
+<span style="border:5px solid red;">29-
+	<?php 	//seleccionar una columna y arrojar todos los datos
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE mes = 08 AND dia = 29");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{	echo $consultasu['count(*)'];
+				echo "<br>";		}
+			include("descone.php");
+	?>
+</span>
+
+<span style="border:5px solid red;">Conexiones de septiembre
+	<?php 
+			//seleccionar una columna y arrojar todos los datos
+
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE mes = 09");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{
+				echo $consultasu['count(*)'];
+				echo "<br>";
+			}
+			include("descone.php");
+		
+	?>
+</span>
+
+<span style="border:5px solid red;">Conexiones de octubre
+	<?php 
+			//seleccionar una columna y arrojar todos los datos
+
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE mes = 10");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{
+				echo $consultasu['count(*)'];
+				echo "<br>";
+			}
+			include("descone.php");
+		
+	?>
+</span>
+
+<span style="border:5px solid red;">Conexiones de noviembre
+	<?php 
+			//seleccionar una columna y arrojar todos los datos
+
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE mes = 11");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{
+				echo $consultasu['count(*)'];
+				echo "<br>";
+			}
+			include("descone.php");
+		
+	?>
+</span>
+
+<span style="border:5px solid red;">Conexiones de diciembre
+	<?php 
+			//seleccionar una columna y arrojar todos los datos
+
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE mes = 12");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{
+				echo $consultasu['count(*)'];
+				echo "<br>";
+			}
+			include("descone.php");
+		
+	?>
+</span>
+
+<span style="border:5px solid red;">Conexiones Lunes
+	<?php 
+			//seleccionar una columna y arrojar todos los datos
+
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE nomsem = 'Monday'");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{
+				echo $consultasu['count(*)'];
+				echo "<br>";
+			}
+			include("descone.php");
+		
+	?>
+</span>
+
+<span style="border:5px solid red;">Conexiones Martes
+	<?php 
+			//seleccionar una columna y arrojar todos los datos
+
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE nomsem = 'Tuesday'");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{
+				echo $consultasu['count(*)'];
+				echo "<br>";
+			}
+			include("descone.php");
+		
+	?>
+</span>
+
+<span style="border:5px solid red;">Conexiones Miércoles
+	<?php 
+			//seleccionar una columna y arrojar todos los datos
+
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE nomsem = 'Wednesday'");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{
+				echo $consultasu['count(*)'];
+				echo "<br>";
+			}
+			include("descone.php");
+		
+	?>
+</span>
+
+<span style="border:5px solid red;">Conexiones Jueves
+	<?php 
+			//seleccionar una columna y arrojar todos los datos
+
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE nomsem = 'Thursday'");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{
+				echo $consultasu['count(*)'];
+				echo "<br>";
+			}
+			include("descone.php");
+		
+	?>
+</span>
+
+<span style="border:5px solid red;">Conexiones Viernes
+	<?php 
+			//seleccionar una columna y arrojar todos los datos
+
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE nomsem = 'Friday'");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{
+				echo $consultasu['count(*)'];
+				echo "<br>";
+			}
+			include("descone.php");
+		
+	?>
+</span>
+
+<span style="border:5px solid red;">Conexiones Sábado
+	<?php 
+			//seleccionar una columna y arrojar todos los datos
+
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE nomsem = 'Saturday'");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{
+				echo $consultasu['count(*)'];
+				echo "<br>";
+			}
+			include("descone.php");
+		
+	?>
+</span>
+
+<span style="border:5px solid red;">Conexiones Domingo
+	<?php 
+			//seleccionar una columna y arrojar todos los datos
+
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario = mysqli_query($con,"SELECT count(*) FROM $estadisticas WHERE nomsem = 'Sunday'");
+			while($consultasu = mysqli_fetch_array($resultadousuario))
+			{
+				echo $consultasu['count(*)'];
+				echo "<br>";
+			}
+			include("descone.php");
+		
+	?>
+</span>
