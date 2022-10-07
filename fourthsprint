@@ -1,0 +1,28 @@
+
+	<form method="POST" action="idconexionindex.php">
+
+		<input type="submit" value="Consultar lista de nombres de usuarios" name="boton2">
+		
+	</form>
+
+<br>
+	<?php 
+			//seleccionar una columna y arrojar todos los datos
+		if(isset($_POST['boton2']))
+		{
+			
+			include("conexion.php");	//seleccionar todos los datos de la tabla usuario y ciclo para arrojar todos los nombres
+			$resultadousuario
+			= mysqli_query($con,"SELECT * FROM $estadisticas");
+			while($consulta = mysqli_fetch_array($resultadousuario))
+			{
+				echo $consulta['id_cuentaconexion']." ".$consulta['ip']." ".$consulta['fecha']." ".$consulta['hora']." ".$consulta['nomsem']." ".$consulta['host'];
+				echo "<br>";
+			}
+			include("descone.php");
+		}
+			
+	?>
+
+
+
